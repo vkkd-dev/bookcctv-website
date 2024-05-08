@@ -101,6 +101,9 @@
                                 </ul>
                             </li>
                             <li>
+                                <a href="gallery.html">Gallery</a>
+                            </li>
+                            <li>
                                 <a href="blog.html">Blog</a>
                             </li>
                             <li><a href="contact.html">Contact</a></li>
@@ -120,7 +123,7 @@
         </header>
         <!-- /.main-header header-style-one -->
 
-        <section class="page-title-block text-center">
+        <section class="page-title-about text-center">
             <div class="container">
                 <h2>About</h2>
                 <div class="thm-breadcrumb">
@@ -160,7 +163,7 @@
                                 <li><i class="fa fa-circle-o"></i> Convallis ligula ligula gravida tristique.</li>
                             </ul> -->
                             <!-- /.list-item -->
-                            <a href="#" class="more-btn">Get Started</a>
+                            <a href="contact.html" class="more-btn">BOOK NOW</a>
                         </div>
                         <!-- /.content-block -->
                     </div>
@@ -201,6 +204,89 @@
         </section>
         <!-- /.mission-style-one -->
 
+        <section class="testimonials-style-one">
+            <div class="container">
+                <div class="title-block text-center">
+                    <span class="tag-line">Testimonials</span>
+                    <h2>What Client Say</h2>
+                </div>
+                <div class="owl-carousel owl-theme testi-carousel-one">
+                    <div class="item">
+                        <div class="single-testimonials-one">
+                            <div class="image-block">
+                                <img src="images/resources/testi1-1.jpg" alt="awesome image">
+                            </div>
+                            <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtempor incid et dolore magna aliqu enim minim veniam quis nostrud exercittion ullamco laboris nisi ut aliquip excepteur sint occaecat cuidatat non proident sunt
+                                in culpa</p>
+                            <h3>Walter Doyle</h3>
+                            <p class="designation">Happy Client</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="single-testimonials-one">
+                            <div class="image-block">
+                                <img src="images/resources/testi1-2.jpg" alt="awesome image">
+                            </div>
+                            <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtempor incid et dolore magna aliqu enim minim veniam quis nostrud exercittion ullamco laboris nisi ut aliquip excepteur sint occaecat cuidatat non proident sunt
+                                in culpa</p>
+                            <h3>Loretta Bailey</h3>
+                            <p class="designation">Happy Client</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="single-testimonials-one">
+                            <div class="image-block">
+                                <img src="images/resources/testi1-1.jpg" alt="awesome image">
+                            </div>
+                            <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtempor incid et dolore magna aliqu enim minim veniam quis nostrud exercittion ullamco laboris nisi ut aliquip excepteur sint occaecat cuidatat non proident sunt
+                                in culpa</p>
+                            <h3>Walter Doyle</h3>
+                            <p class="designation">Happy Client</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /.testimonials-style-one -->
+
+        <section class="brands-area-one home-two">
+            <div class="container">
+                <div class="brands-carousel-one owl-carousel owl-theme">
+                    <div class="item">
+                        <img src="images/brands/brands-2-1.png" alt="awesome image">
+                    </div>
+                    <div class="item">
+                        <img src="images/brands/brands-2-2.png" alt="awesome image">
+                    </div>
+                    <div class="item">
+                        <img src="images/brands/brands-2-3.png" alt="awesome image">
+                    </div>
+                    <div class="item">
+                        <img src="images/brands/brands-2-4.png" alt="awesome image">
+                    </div>
+                    <div class="item">
+                        <img src="images/brands/brands-2-5.png" alt="awesome image">
+                    </div>
+                    <div class="item">
+                        <img src="images/brands/brands-2-1.png" alt="awesome image">
+                    </div>
+                    <div class="item">
+                        <img src="images/brands/brands-2-2.png" alt="awesome image">
+                    </div>
+                    <div class="item">
+                        <img src="images/brands/brands-2-3.png" alt="awesome image">
+                    </div>
+                    <div class="item">
+                        <img src="images/brands/brands-2-4.png" alt="awesome image">
+                    </div>
+                    <div class="item">
+                        <img src="images/brands/brands-2-5.png" alt="awesome image">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /.brands-area-one -->
+
         <footer class="site-footer">
             <div class="main-footer">
                 <div class="container">
@@ -227,10 +313,10 @@
                                 </div>
                                 <!-- /.footer-widget-title -->
                                 <ul class="links-lists">
-                                    <li><a href="#">About Us </a></li>
-                                    <li><a href="#">Products</a></li>
-                                    <li><a href="#">Services</a></li>
-                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="about.html">About Us </a></li>
+                                    <li><a href="services.html">Services</a></li>
+                                    <li><a href="gallery.html">Gallery</a></li>
+                                    <li><a href="contact.html">Contact Us</a></li>
                                     <li><a href="#">Privacy Policy</a></li>
                                 </ul>
                                 <!-- /.links-lists -->
@@ -317,6 +403,18 @@
     <script src="js/jquery.counterup.min.js"></script>
     <script src="js/wow.js"></script>
     <script src="js/theme.js"></script>
+    <script>
+        let prevScrollPos = window.pageYOffset;
+        window.addEventListener('scroll', () => {
+            let currentScrollPos = window.pageYOffset;
+            if (prevScrollPos > currentScrollPos) {
+                document.querySelector('header').classList.remove('hidden');
+            } else {
+                document.querySelector('header').classList.add('hidden');
+            }
+            prevScrollPos = currentScrollPos;
+        });
+    </script>
 </body>
 
 
